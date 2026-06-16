@@ -90,11 +90,30 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+/* affiliate CTAs + trip-planning block */
+.disc{font-size:10.5px;color:var(--mut);text-align:center;margin:-8px 0 14px;line-height:1.45}
+.cta{display:inline-flex;align-items:center;gap:5px;margin-top:9px;text-decoration:none;
+ font-family:'DotGothic16',monospace;font-size:12px;font-weight:700;letter-spacing:.3px;color:#1a1208;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);border:1px solid #f0e3bf;
+ padding:7px 13px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+.cta.map{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);box-shadow:none}
+.cta:active{transform:scale(.96)}
+.foodcta{text-align:center;margin-top:16px}
+.planblock{margin-top:18px;padding:15px 14px;border:1px solid rgba(201,174,106,.32);border-radius:14px;
+ background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
+.planblock h3{font-family:'DotGothic16',monospace;font-size:14px;color:var(--gold2);text-align:center;letter-spacing:1px}
+.planblock .ds{font-size:10.5px;color:var(--cream);opacity:.82;text-align:center;margin:4px 0 12px;line-height:1.45}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:5px;text-decoration:none;font-family:'DotGothic16',monospace;
+ font-size:12.5px;font-weight:700;color:#1a1208;background:linear-gradient(135deg,#e8d39a,#c9ae6a);
+ border:1px solid #f0e3bf;border-radius:999px;padding:9px 14px}
+.pill:active{transform:scale(.96)}
 </style></head><body><main class="page">
 <div class="top"><img class="logo" src="img/logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAYCAYAAAAyC/XlAAAAi0lEQVR4nO3XPQ2AMBQA4ZbgBDlYwAAbDggO2DCABeRUS3FAhxeG5u5b+5c0lybNqWF/Sk0BxzzlyHrPL7/e/xDZXP0zADgDgDMAOAOAMwA4A4DL0X+2+uYLAGcAcAYAZwBwBgBnAHAGADe2JpzX/Tm+rYvrO74/XwA4A4AzADgDgDMAOAOAM4DE9gL2yyoMrqOXKQAAAABJRU5ErkJggg==" alt=""></div>
 <h1>BEST VIEWS</h1>
 <div class="kicker">★ ＴＯＰ ５ ★</div>
 <div class="stand">The jaw-dropping vistas — from Mt Fuji framed by a pagoda to a glowing blue carpet of a million flowers.</div>
+<div class="disc">Tap a place to book a tour or ticket. Some links are affiliate links — they cost you nothing &amp; keep these guides free. 🙏</div>
 <section class="hero">
       <img class="himg" src="img/best-views-1.jpg" alt="Chureito Pagoda &amp; Mt Fuji" loading="eager" decoding="async">
       <div class="hgrad"></div>
@@ -103,6 +122,7 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
         <div class="name big">Chureito Pagoda &amp; Mt Fuji <span class="jp">忠霊塔・富士山</span></div>
         <div class="tags">Pagoda view of Mt Fuji ・ Yamanashi (Shimo-Yoshida Stn) ・ Free <span class="note">Japan&#x27;s most iconic Fuji view</span></div>
         <div class="hist">A five-story pagoda at Arakura Sengen Shrine framing Mt Fuji with cherry blossoms — arguably Japan&#x27;s most photographed view.</div>
+        <a class="cta" href="https://www.klook.com/en-US/search/?query=Mount%20Fuji%20Chureito%20Pagoda%20day%20tour&aff_id=88667&aid_aff=best-views-1" target="_blank" rel="sponsored nofollow noopener">🎫 Tours &amp; tickets ›</a>
       </div>
     </section>
 <div class="row">
@@ -110,26 +130,27 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
       <img class="thumb" src="img/best-views-2.jpg" alt="Shibuya Sky" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Shibuya Sky <span class="jp">渋谷スカイ</span></div>
         <div class="tags">Open-air rooftop deck ・ Tokyo (Shibuya Stn) ・ ¥3,000+ <span class="note">Tokyo&#x27;s premier 360° view</span></div>
-        <div class="hist sm">A 230m open-air rooftop above the world&#x27;s busiest crossing — sweeping sunset panoramas, Mt Fuji on clear days.</div></div>
+        <div class="hist sm">A 230m open-air rooftop above the world&#x27;s busiest crossing — sweeping sunset panoramas, Mt Fuji on clear days.</div><a class="cta" href="https://www.klook.com/en-US/search/?query=Shibuya%20Sky%20ticket&aff_id=88667&aid_aff=best-views-2" target="_blank" rel="sponsored nofollow noopener">🎫 Tours &amp; tickets ›</a></div>
     </div><div class="row">
       <span class="rk">03</span>
       <img class="thumb" src="img/best-views-3.jpg" alt="Arashiyama Bamboo Grove" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Arashiyama Bamboo Grove <span class="jp">嵐山竹林</span></div>
         <div class="tags">Towering bamboo path ・ Kyoto (Saga-Arashiyama Stn) ・ Free <span class="note">Kyoto&#x27;s signature landmark</span></div>
-        <div class="hist sm">A serene path through soaring bamboo on Kyoto&#x27;s west edge, filtered green light and rustling leaves overhead.</div></div>
+        <div class="hist sm">A serene path through soaring bamboo on Kyoto&#x27;s west edge, filtered green light and rustling leaves overhead.</div><a class="cta" href="https://www.klook.com/en-US/search/?query=Arashiyama%20bamboo%20grove%20tour%20Kyoto&aff_id=88667&aid_aff=best-views-3" target="_blank" rel="sponsored nofollow noopener">🎫 Tours &amp; tickets ›</a></div>
     </div><div class="row">
       <span class="rk">04</span>
       <img class="thumb" src="img/best-views-4.jpg" alt="Hitachi Seaside Park" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Hitachi Seaside Park <span class="jp">国営ひたち海浜公園</span></div>
         <div class="tags">Vast seaside flower park ・ Ibaraki (Katsuta Stn + bus) ・ ¥450+ <span class="note">World-famous nemophila &amp; kochia</span></div>
-        <div class="hist sm">Late spring: a sea of 5M+ sky-blue nemophila on Miharashi Hill; autumn: the same hills blaze crimson with kochia.</div></div>
+        <div class="hist sm">Late spring: a sea of 5M+ sky-blue nemophila on Miharashi Hill; autumn: the same hills blaze crimson with kochia.</div><a class="cta" href="https://www.klook.com/en-US/search/?query=Hitachi%20Seaside%20Park%20tour%20Ibaraki&aff_id=88667&aid_aff=best-views-4" target="_blank" rel="sponsored nofollow noopener">🎫 Tours &amp; tickets ›</a></div>
     </div><div class="row">
       <span class="rk">05</span>
       <img class="thumb" src="img/best-views-5.jpg" alt="Takachiho Gorge" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Takachiho Gorge <span class="jp">高千穂峡</span></div>
         <div class="tags">Volcanic river gorge ・ Miyazaki, Kyushu (bus to Takachiho) ・ Free (boat ~¥5,000) <span class="note">National Place of Scenic Beauty</span></div>
-        <div class="hist sm">Sheer basalt columns where Manai Falls plunges into emerald water — best seen by rowboat beneath the cliffs.</div></div>
+        <div class="hist sm">Sheer basalt columns where Manai Falls plunges into emerald water — best seen by rowboat beneath the cliffs.</div><a class="cta" href="https://www.klook.com/en-US/search/?query=Takachiho%20Gorge%20tour%20Miyazaki&aff_id=88667&aid_aff=best-views-5" target="_blank" rel="sponsored nofollow noopener">🎫 Tours &amp; tickets ›</a></div>
     </div>
+<div class="planblock"><h3>✈️ Before you go</h3><div class="ds">Some links are affiliate links — booking through them costs you nothing and keeps these guides free. 🙏</div><div class="pills"><a class="pill" href="https://www.klook.com/en-US/search/?query=Japan%20eSIM&aff_id=88667&aid_aff=best-views-ess" target="_blank" rel="sponsored nofollow noopener">📶 eSIM</a><a class="pill" href="https://www.trip.com/trains/japan-rail-pass?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🚄 JR Pass</a><a class="pill" href="https://www.trip.com/hotels/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels</a><a class="pill" href="https://www.trip.com/flights/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">✈️ Flights</a></div></div>
 <div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
 </main>
 <div id="sheet" class="sheet" role="dialog" aria-label="Share this list">

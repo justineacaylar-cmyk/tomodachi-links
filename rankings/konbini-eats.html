@@ -90,11 +90,30 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+/* affiliate CTAs + trip-planning block */
+.disc{font-size:10.5px;color:var(--mut);text-align:center;margin:-8px 0 14px;line-height:1.45}
+.cta{display:inline-flex;align-items:center;gap:5px;margin-top:9px;text-decoration:none;
+ font-family:'DotGothic16',monospace;font-size:12px;font-weight:700;letter-spacing:.3px;color:#1a1208;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);border:1px solid #f0e3bf;
+ padding:7px 13px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+.cta.map{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);box-shadow:none}
+.cta:active{transform:scale(.96)}
+.foodcta{text-align:center;margin-top:16px}
+.planblock{margin-top:18px;padding:15px 14px;border:1px solid rgba(201,174,106,.32);border-radius:14px;
+ background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
+.planblock h3{font-family:'DotGothic16',monospace;font-size:14px;color:var(--gold2);text-align:center;letter-spacing:1px}
+.planblock .ds{font-size:10.5px;color:var(--cream);opacity:.82;text-align:center;margin:4px 0 12px;line-height:1.45}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:5px;text-decoration:none;font-family:'DotGothic16',monospace;
+ font-size:12.5px;font-weight:700;color:#1a1208;background:linear-gradient(135deg,#e8d39a,#c9ae6a);
+ border:1px solid #f0e3bf;border-radius:999px;padding:9px 14px}
+.pill:active{transform:scale(.96)}
 </style></head><body><main class="page">
 <div class="top"><img class="logo" src="img/logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAAA1UlEQVR4nO3ZsQ2DQBQFwTuLbkjdfwVOXQ8ugWCEzsY7OSCtfvAk5ljsOI5Dnp9zzrHQY+XH76CAqICogKiAqICogGh++85TV+/ELhAVEBUQFRAVEBUQFRDNX995q3diF4gKiAqICogKiAqICojm3Xfe1TuxC0QFRAVEBUQFRAVEBUQFRAVEBUQFRAVEBUQFRAVE27jYvj/HSu/369L3d4GogKiAqICogKiAqIBo+/f/vmfO+nSBqICogKiAqICogKiAqICogKiAqICogKiAqICogMN8AKFPG3lmvtI1AAAAAElFTkSuQmCC" alt=""></div>
 <h1>KONBINI</h1>
 <div class="kicker">★ ＴＯＰ ５ ★</div>
 <div class="stand">Japan&#x27;s convenience stores are a food destination — five items worth crossing the street for.</div>
+<div class="disc">Tap a place to book a tour or ticket. Some links are affiliate links — they cost you nothing &amp; keep these guides free. 🙏</div>
 <section class="hero">
       <img class="himg" src="img/konbini-eats-1.jpg" alt="Famichiki" loading="eager" decoding="async">
       <div class="hgrad"></div>
@@ -103,6 +122,7 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
         <div class="name big">Famichiki <span class="jp">ファミチキ</span></div>
         <div class="tags">Hot-case fried chicken ・ FamilyMart, nationwide ・ ¥ <span class="note">Chain signature since 2006</span></div>
         <div class="hist">FamilyMart&#x27;s crispy, juicy boneless fried-chicken cutlet — the benchmark every konbini chicken is measured against.</div>
+        <a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Famichiki%20FamilyMart%2C%20nationwide" target="_blank" rel="noopener">📍 Map</a>
       </div>
     </section>
 <div class="row">
@@ -110,26 +130,27 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
       <img class="thumb" src="img/konbini-eats-2.jpg" alt="Karaage-kun" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Karaage-kun <span class="jp">からあげクン</span></div>
         <div class="tags">Fried-chicken nugget cups ・ Lawson, nationwide ・ ¥ <span class="note">Guinness World Record holder</span></div>
-        <div class="hist sm">Lawson&#x27;s bite-sized nuggets since 1986; the price held 36 years until 2022, with ever-rotating flavors.</div></div>
+        <div class="hist sm">Lawson&#x27;s bite-sized nuggets since 1986; the price held 36 years until 2022, with ever-rotating flavors.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Karaage-kun%20Lawson%2C%20nationwide" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">03</span>
       <img class="thumb" src="img/konbini-eats-3.jpg" alt="Tamago Sando" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Tamago Sando <span class="jp">たまごサンド</span></div>
         <div class="tags">Egg-salad sandwich ・ 7-Eleven, nationwide ・ ¥ <span class="note">Cult traveler favorite</span></div>
-        <div class="hist sm">7-Eleven&#x27;s pillowy egg-salad sandwich that went viral worldwide — creamy filling on soft shokupan.</div></div>
+        <div class="hist sm">7-Eleven&#x27;s pillowy egg-salad sandwich that went viral worldwide — creamy filling on soft shokupan.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Tamago%20Sando%207-Eleven%2C%20nationwide" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">04</span>
       <img class="thumb" src="img/konbini-eats-4.jpg" alt="Kin no Series" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Kin no Series <span class="jp">金のシリーズ</span></div>
         <div class="tags">Premium ready-meals ・ 7-Eleven, nationwide ・ ¥¥ <span class="note">7-Eleven&#x27;s flagship line</span></div>
-        <div class="hist sm">The &#x27;Gold Series&#x27; reformulates everyday staples with upgraded ingredients — 7-Eleven&#x27;s most indulgent shelf.</div></div>
+        <div class="hist sm">The &#x27;Gold Series&#x27; reformulates everyday staples with upgraded ingredients — 7-Eleven&#x27;s most indulgent shelf.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Kin%20no%20Series%207-Eleven%2C%20nationwide" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">05</span>
       <img class="thumb" src="img/konbini-eats-5.jpg" alt="Premium Roll Cake" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Premium Roll Cake <span class="jp">プレミアムロールケーキ</span></div>
         <div class="tags">Chilled cream dessert ・ Lawson, nationwide ・ ¥ <span class="note">Lawson signature sweet</span></div>
-        <div class="hist sm">A coil of sponge around a swirl of fresh cream, eaten with a fork — a Lawson Uchi Café all-time best-seller.</div></div>
+        <div class="hist sm">A coil of sponge around a swirl of fresh cream, eaten with a fork — a Lawson Uchi Café all-time best-seller.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Premium%20Roll%20Cake%20Lawson%2C%20nationwide" target="_blank" rel="noopener">📍 Map</a></div>
     </div>
+<div class="foodcta"><a class="pill" href="https://www.klook.com/en-US/search/?query=Tokyo%20food%20tour&aff_id=88667&aid_aff=konbini-eats-foodtour" target="_blank" rel="sponsored nofollow noopener">🍜 Book a food tour ›</a></div><div class="planblock"><h3>✈️ Before you go</h3><div class="ds">Some links are affiliate links — booking through them costs you nothing and keeps these guides free. 🙏</div><div class="pills"><a class="pill" href="https://www.klook.com/en-US/search/?query=Japan%20eSIM&aff_id=88667&aid_aff=konbini-eats-ess" target="_blank" rel="sponsored nofollow noopener">📶 eSIM</a><a class="pill" href="https://www.trip.com/trains/japan-rail-pass?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🚄 JR Pass</a><a class="pill" href="https://www.trip.com/hotels/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels</a><a class="pill" href="https://www.trip.com/flights/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">✈️ Flights</a></div></div>
 <div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
 </main>
 <div id="sheet" class="sheet" role="dialog" aria-label="Share this list">

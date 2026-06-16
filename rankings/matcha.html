@@ -90,11 +90,30 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+/* affiliate CTAs + trip-planning block */
+.disc{font-size:10.5px;color:var(--mut);text-align:center;margin:-8px 0 14px;line-height:1.45}
+.cta{display:inline-flex;align-items:center;gap:5px;margin-top:9px;text-decoration:none;
+ font-family:'DotGothic16',monospace;font-size:12px;font-weight:700;letter-spacing:.3px;color:#1a1208;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);border:1px solid #f0e3bf;
+ padding:7px 13px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+.cta.map{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);box-shadow:none}
+.cta:active{transform:scale(.96)}
+.foodcta{text-align:center;margin-top:16px}
+.planblock{margin-top:18px;padding:15px 14px;border:1px solid rgba(201,174,106,.32);border-radius:14px;
+ background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
+.planblock h3{font-family:'DotGothic16',monospace;font-size:14px;color:var(--gold2);text-align:center;letter-spacing:1px}
+.planblock .ds{font-size:10.5px;color:var(--cream);opacity:.82;text-align:center;margin:4px 0 12px;line-height:1.45}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:5px;text-decoration:none;font-family:'DotGothic16',monospace;
+ font-size:12.5px;font-weight:700;color:#1a1208;background:linear-gradient(135deg,#e8d39a,#c9ae6a);
+ border:1px solid #f0e3bf;border-radius:999px;padding:9px 14px}
+.pill:active{transform:scale(.96)}
 </style></head><body><main class="page">
 <div class="top"><img class="logo" src="img/logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABICAYAAAByQzKvAAABKElEQVR4nO3cP0rDcBiA4UbcMrh6IxF6AOnuBTyIF+hePEBBvJGrg7PeIL8hvPTf86xpQ3j5KB8h6bRZ6Xj8+ls6vt0+Tbd8/rs1X2ZM4JjAMYFjAscEjgkcG+54u4/d4p546w4vh8WGJjgmcEzgmMAxgWMCxwSOTb8/3/bckAmOCRwTOCZwTOCYwDGBY/ejD7x+vtXXcNH2z++Lx01wTOCYwDGBYwLHBI4JHBM4JnBM4JjAMYFjAscEjgl87s9FXPv94v3gfu+ICY4JHBM4JnBM4JjAMYFP/Z6c54eXzQ+P3pM7JT8RMYFjAscEjgkcEzi26j/BbmFPngd77ogJjgkcEzgmcEzgmMAxgc99D770PXleueeOmOCYwDGBYwLHBI4JHBN40/oHf/8qJhj5/RIAAAAASUVORK5CYII=" alt=""></div>
 <h1>MATCHA</h1>
 <div class="kicker">★ ＴＯＰ ５ ★</div>
 <div class="stand">From the &#x27;world&#x27;s strongest&#x27; matcha gelato in Asakusa to a 170-year-old Uji tea house.</div>
+<div class="disc">Tap a place to book a tour or ticket. Some links are affiliate links — they cost you nothing &amp; keep these guides free. 🙏</div>
 <section class="hero">
       <img class="himg" src="img/matcha-1.jpg" alt="Suzukien" loading="eager" decoding="async">
       <div class="hgrad"></div>
@@ -103,6 +122,7 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
         <div class="name big">Suzukien <span class="jp">壽々喜園</span></div>
         <div class="tags">Matcha gelato (7 levels) ・ Asakusa ・ ¥ <span class="note">Billed &#x27;world&#x27;s strongest&#x27; (shop&#x27;s claim)</span></div>
         <div class="hist">Tea shop founded 1853; with maker Nanaya it serves matcha gelato in 7 grades — No.7 is billed as the world&#x27;s richest.</div>
+        <a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Suzukien%20Asakusa" target="_blank" rel="noopener">📍 Map</a>
       </div>
     </section>
 <div class="row">
@@ -110,26 +130,27 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
       <img class="thumb" src="img/matcha-2.jpg" alt="Nakamura Tokichi" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Nakamura Tokichi <span class="jp">中村藤吉本店</span></div>
         <div class="tags">Historic Uji tea house &amp; parfait ・ Uji, Kyoto (1 min from JR Uji Stn) ・ ¥¥ <span class="note">Important Cultural Landscape</span></div>
-        <div class="hist sm">Founded 1854; 170+ years of Uji tea served in a preserved century-old shop — try the maccha jelly parfait.</div></div>
+        <div class="hist sm">Founded 1854; 170+ years of Uji tea served in a preserved century-old shop — try the maccha jelly parfait.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Nakamura%20Tokichi%20Uji%2C%20Kyoto%20%281%20min%20from%20JR%20Uji%20Stn%29" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">03</span>
       <img class="thumb" src="img/matcha-3.jpg" alt="Saryo Tsujiri" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Saryo Tsujiri <span class="jp">茶寮都路里</span></div>
         <div class="tags">Matcha parfait café ・ Gion, Kyoto (Gion-Shijo Stn) ・ ¥¥ </div>
-        <div class="hist sm">Café arm of Gion Tsujiri (Uji tea, est. 1860); its towering matcha parfait is a Kyoto rite of passage.</div></div>
+        <div class="hist sm">Café arm of Gion Tsujiri (Uji tea, est. 1860); its towering matcha parfait is a Kyoto rite of passage.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Saryo%20Tsujiri%20Gion%2C%20Kyoto%20%28Gion-Shijo%20Stn%29" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">04</span>
       <img class="thumb" src="img/matcha-4.jpg" alt="Gion Tsujiri" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Gion Tsujiri <span class="jp">祇園辻利</span></div>
         <div class="tags">Uji tea shop &amp; sweets counter ・ Gion, Kyoto (Gion-Shijo Stn) ・ ¥¥ </div>
-        <div class="hist sm">Founded 1860 in Uji; the Gion flagship sells premium matcha and serves soft serve and matcha sweets.</div></div>
+        <div class="hist sm">Founded 1860 in Uji; the Gion flagship sells premium matcha and serves soft serve and matcha sweets.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Gion%20Tsujiri%20Gion%2C%20Kyoto%20%28Gion-Shijo%20Stn%29" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">05</span>
       <img class="thumb" src="img/matcha-5.jpg" alt="The Matcha Tokyo" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">The Matcha Tokyo <span class="jp">ザ・マッチャ・トーキョー</span></div>
         <div class="tags">Modern organic matcha café ・ Omotesando ・ ¥¥ </div>
-        <div class="hist sm">Contemporary specialty bar serving organic matcha lattes and soft serve — the stylish Tokyo counterpoint.</div></div>
+        <div class="hist sm">Contemporary specialty bar serving organic matcha lattes and soft serve — the stylish Tokyo counterpoint.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=The%20Matcha%20Tokyo%20Omotesando" target="_blank" rel="noopener">📍 Map</a></div>
     </div>
+<div class="foodcta"><a class="pill" href="https://www.klook.com/en-US/search/?query=Kyoto%20matcha%20experience&aff_id=88667&aid_aff=matcha-foodtour" target="_blank" rel="sponsored nofollow noopener">🍜 Book a food tour ›</a></div><div class="planblock"><h3>✈️ Before you go</h3><div class="ds">Some links are affiliate links — booking through them costs you nothing and keeps these guides free. 🙏</div><div class="pills"><a class="pill" href="https://www.klook.com/en-US/search/?query=Japan%20eSIM&aff_id=88667&aid_aff=matcha-ess" target="_blank" rel="sponsored nofollow noopener">📶 eSIM</a><a class="pill" href="https://www.trip.com/trains/japan-rail-pass?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🚄 JR Pass</a><a class="pill" href="https://www.trip.com/hotels/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels</a><a class="pill" href="https://www.trip.com/flights/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">✈️ Flights</a></div></div>
 <div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
 </main>
 <div id="sheet" class="sheet" role="dialog" aria-label="Share this list">

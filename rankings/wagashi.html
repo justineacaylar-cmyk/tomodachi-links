@@ -90,11 +90,30 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+/* affiliate CTAs + trip-planning block */
+.disc{font-size:10.5px;color:var(--mut);text-align:center;margin:-8px 0 14px;line-height:1.45}
+.cta{display:inline-flex;align-items:center;gap:5px;margin-top:9px;text-decoration:none;
+ font-family:'DotGothic16',monospace;font-size:12px;font-weight:700;letter-spacing:.3px;color:#1a1208;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);border:1px solid #f0e3bf;
+ padding:7px 13px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+.cta.map{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);box-shadow:none}
+.cta:active{transform:scale(.96)}
+.foodcta{text-align:center;margin-top:16px}
+.planblock{margin-top:18px;padding:15px 14px;border:1px solid rgba(201,174,106,.32);border-radius:14px;
+ background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
+.planblock h3{font-family:'DotGothic16',monospace;font-size:14px;color:var(--gold2);text-align:center;letter-spacing:1px}
+.planblock .ds{font-size:10.5px;color:var(--cream);opacity:.82;text-align:center;margin:4px 0 12px;line-height:1.45}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:5px;text-decoration:none;font-family:'DotGothic16',monospace;
+ font-size:12.5px;font-weight:700;color:#1a1208;background:linear-gradient(135deg,#e8d39a,#c9ae6a);
+ border:1px solid #f0e3bf;border-radius:999px;padding:9px 14px}
+.pill:active{transform:scale(.96)}
 </style></head><body><main class="page">
 <div class="top"><img class="logo" src="img/logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABYCAYAAABWO7HcAAABL0lEQVR4nO3c0UnEQBRA0USsSDuwCsn2YREWErSJ7UBbithA7scyzC6c87sfSy4v8JiBrMtkn9vLcfb7x/67LhM9zfzzRyBQECgIFAQKAgWBwvAd47j+nO45t1rfXoc+gwkKAgWBgkBBoCBQECis977nzN6TTFAQKAgUBAoCBYGCQMF5UDBBQaAgUBAoCBQECgJN34OOY+y92Lq6F5vJKxYECgIFgYJAQaDh92LH2D1n9p5kgoJAQaAgUBAoCBQECs6DggkKAgWBgkBBoCBQECg8L4Ndvi/LIzNBQaAgUBAoCBQECgKNPg/avra7vhfb33f3YiN5xYJAQaAgUBAoCDT7XmwbvCfduucUExQECgIFgYJAQaAgUJj6reZ/vif94LxiQaAgUBAoCBQEWs79AaDiKgidbV//AAAAAElFTkSuQmCC" alt=""></div>
 <h1>WAGASHI</h1>
 <div class="kicker">★ ＴＯＰ ５ ★</div>
 <div class="stand">A near-500-year-old yokan house, Asakusa&#x27;s sweet-potato classic and Tokyo&#x27;s top dorayaki.</div>
+<div class="disc">Tap a place to book a tour or ticket. Some links are affiliate links — they cost you nothing &amp; keep these guides free. 🙏</div>
 <section class="hero">
       <img class="himg" src="img/wagashi-1.jpg" alt="Toraya" loading="eager" decoding="async">
       <div class="hgrad"></div>
@@ -103,6 +122,7 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
         <div class="name big">Toraya <span class="jp">とらや</span></div>
         <div class="tags">Yokan &amp; wagashi ・ Akasaka (Akasaka-mitsuke Stn) ・ ¥¥ <span class="note">Purveyor to the Imperial household</span></div>
         <div class="hist">Founded in Kyoto c.1526 — nearly 500 years of confectionery, renowned for smooth azuki-bean yokan.</div>
+        <a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Toraya%20Akasaka%20%28Akasaka-mitsuke%20Stn%29" target="_blank" rel="noopener">📍 Map</a>
       </div>
     </section>
 <div class="row">
@@ -110,26 +130,27 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
       <img class="thumb" src="img/wagashi-2.jpg" alt="Funawa" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Funawa <span class="jp">舟和</span></div>
         <div class="tags">Imo-yokan &amp; anmitsu ・ Asakusa (near Nakamise) ・ ¥ </div>
-        <div class="hist sm">Founded 1902 by a potato wholesaler; its sweet-potato imo-yokan became an Asakusa icon and edible souvenir.</div></div>
+        <div class="hist sm">Founded 1902 by a potato wholesaler; its sweet-potato imo-yokan became an Asakusa icon and edible souvenir.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Funawa%20Asakusa%20%28near%20Nakamise%29" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">03</span>
       <img class="thumb" src="img/wagashi-3.jpg" alt="Usagiya" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Usagiya <span class="jp">うさぎや</span></div>
         <div class="tags">Dorayaki ・ Ueno (Ueno-hirokoji Stn) ・ ¥ <span class="note">Tokyo&#x27;s &#x27;top three&#x27; dorayaki</span></div>
-        <div class="hist sm">Century-old; fluffy freshly griddled dorayaki with glossy honey-scented red-bean paste — eat it warm.</div></div>
+        <div class="hist sm">Century-old; fluffy freshly griddled dorayaki with glossy honey-scented red-bean paste — eat it warm.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Usagiya%20Ueno%20%28Ueno-hirokoji%20Stn%29" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">04</span>
       <img class="thumb" src="img/wagashi-4.jpg" alt="Demachi Futaba" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Demachi Futaba <span class="jp">出町ふたば</span></div>
         <div class="tags">Mame-mochi (bean daifuku) ・ Demachiyanagi, Kyoto ・ ¥ </div>
-        <div class="hist sm">Famous Kyoto institution whose mame-daifuku — soft mochi with red peas and bean paste — draws daily queues.</div></div>
+        <div class="hist sm">Famous Kyoto institution whose mame-daifuku — soft mochi with red peas and bean paste — draws daily queues.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Demachi%20Futaba%20Demachiyanagi%2C%20Kyoto" target="_blank" rel="noopener">📍 Map</a></div>
     </div><div class="row">
       <span class="rk">05</span>
       <img class="thumb" src="img/wagashi-5.jpg" alt="Toraya Karyo" loading="lazy" decoding="async">
       <div class="rbody"><div class="name">Toraya Karyo <span class="jp">とらや菓寮</span></div>
         <div class="tags">Wagashi tea-salon ・ Tokyo (Akasaka/Roppongi) ・ ¥¥ </div>
-        <div class="hist sm">Toraya&#x27;s sit-down salon — pair seasonal fresh wagashi and anmitsu with matcha in a calm modern setting.</div></div>
+        <div class="hist sm">Toraya&#x27;s sit-down salon — pair seasonal fresh wagashi and anmitsu with matcha in a calm modern setting.</div><a class="cta map" href="https://www.google.com/maps/search/?api=1&query=Toraya%20Karyo%20Tokyo%20%28Akasaka/Roppongi%29" target="_blank" rel="noopener">📍 Map</a></div>
     </div>
+<div class="foodcta"><a class="pill" href="https://www.klook.com/en-US/search/?query=Kyoto%20wagashi%20making%20experience&aff_id=88667&aid_aff=wagashi-foodtour" target="_blank" rel="sponsored nofollow noopener">🍜 Book a food tour ›</a></div><div class="planblock"><h3>✈️ Before you go</h3><div class="ds">Some links are affiliate links — booking through them costs you nothing and keeps these guides free. 🙏</div><div class="pills"><a class="pill" href="https://www.klook.com/en-US/search/?query=Japan%20eSIM&aff_id=88667&aid_aff=wagashi-ess" target="_blank" rel="sponsored nofollow noopener">📶 eSIM</a><a class="pill" href="https://www.trip.com/trains/japan-rail-pass?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🚄 JR Pass</a><a class="pill" href="https://www.trip.com/hotels/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels</a><a class="pill" href="https://www.trip.com/flights/?Allianceid=306494469" target="_blank" rel="sponsored nofollow noopener">✈️ Flights</a></div></div>
 <div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
 </main>
 <div id="sheet" class="sheet" role="dialog" aria-label="Share this list">
