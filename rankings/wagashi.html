@@ -133,9 +133,9 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
   <div class="shead">Share this list 📣</div>
   <div class="ssub">Like it? Save it and send it to a friend.</div>
   <div class="sbtns">
-    <a id="sfb" class="sbtn fb" target="_blank" rel="noopener">Facebook</a>
-    <a id="sln" class="sbtn line" target="_blank" rel="noopener">LINE</a>
-    <a id="sx" class="sbtn x" target="_blank" rel="noopener">X</a>
+    <a class="sbtn fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjustineacaylar-cmyk.github.io%2Ftomodachi-links%2Frankings%2Fwagashi.html" target="_blank" rel="noopener">Facebook</a>
+    <a class="sbtn line" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fjustineacaylar-cmyk.github.io%2Ftomodachi-links%2Frankings%2Fwagashi.html" target="_blank" rel="noopener">LINE</a>
+    <a class="sbtn x" href="https://twitter.com/intent/tweet?text=WAGASHI%20TOP%205%EF%BD%9CTomodachi%20TV%20%F0%9F%87%AF%F0%9F%87%B5&url=https%3A%2F%2Fjustineacaylar-cmyk.github.io%2Ftomodachi-links%2Frankings%2Fwagashi.html" target="_blank" rel="noopener">X</a>
     <button class="sbtn copy" type="button" onclick="copyLink()">🔗 Copy link</button>
   </div>
 </section>
@@ -147,15 +147,9 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
-const SHARE_TEXT="WAGASHI TOP 5｜Tomodachi TV 🇯🇵";
+const PAGE_URL="https://justineacaylar-cmyk.github.io/tomodachi-links/rankings/wagashi.html",SHARE_TEXT="WAGASHI TOP 5｜Tomodachi TV 🇯🇵";
 function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');setTimeout(function(){t.classList.remove('on');},1600);}
-function copyLink(){(navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){toast('Link copied ✓');}).catch(function(){window.prompt('Copy this link:',location.href);});}
-function nativeShare(){if(navigator.share){navigator.share({title:document.title,text:SHARE_TEXT,url:location.href}).catch(function(){});}else{copyLink();}}
-document.addEventListener('DOMContentLoaded',function(){
-  var u=encodeURIComponent(location.href),t=encodeURIComponent(SHARE_TEXT);
-  var fb=document.getElementById('sfb');if(fb)fb.href='https://www.facebook.com/sharer/sharer.php?u='+u;
-  var ln=document.getElementById('sln');if(ln)ln.href='https://social-plugins.line.me/lineit/share?url='+u;
-  var x=document.getElementById('sx');if(x)x.href='https://twitter.com/intent/tweet?text='+t+'&url='+u;
-});
+function copyLink(){(navigator.clipboard?navigator.clipboard.writeText(PAGE_URL):Promise.reject()).then(function(){toast('Link copied ✓');}).catch(function(){window.prompt('Copy this link:',PAGE_URL);});}
+function nativeShare(){if(navigator.share){navigator.share({title:document.title,text:SHARE_TEXT,url:PAGE_URL}).catch(function(){});}else{copyLink();}}
 </script>
 </body></html>
