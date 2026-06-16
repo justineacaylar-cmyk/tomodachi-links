@@ -128,26 +128,26 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
         <div class="hist sm">A tiny fishing island where free-roaming cats vastly outnumber residents, historically protected for good luck; a cat shrine sits on the island.</div></div>
     </div>
 <section class="share">
-  <div class="shead">友達・SNSにシェア 📣</div>
-  <div class="ssub">気に入ったら保存して、友達にも教えてあげよう</div>
+  <div class="shead">Share this list 📣</div>
+  <div class="ssub">Like it? Save it and send it to a friend.</div>
   <div class="sbtns">
     <a id="sfb" class="sbtn fb" target="_blank" rel="noopener">Facebook</a>
     <a id="sln" class="sbtn line" target="_blank" rel="noopener">LINE</a>
     <a id="sx" class="sbtn x" target="_blank" rel="noopener">X</a>
-    <button class="sbtn copy" type="button" onclick="copyLink()">🔗 リンク</button>
+    <button class="sbtn copy" type="button" onclick="copyLink()">🔗 Copy link</button>
   </div>
 </section>
 <div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
 </main>
 <div class="actionbar">
-  <button class="abtn share" type="button" onclick="nativeShare()">📤 シェア</button>
-  <a class="abtn pdf" href="animal-spots.pdf" download>⬇ PDF保存</a>
+  <button class="abtn share" type="button" onclick="nativeShare()">📤 Share</button>
+  <a class="abtn pdf" href="animal-spots.pdf" download>⬇ Save PDF</a>
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
 const SHARE_TEXT="ANIMALS TOP 5｜Tomodachi TV 🇯🇵";
 function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');setTimeout(function(){t.classList.remove('on');},1600);}
-function copyLink(){(navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){toast('リンクをコピーしました ✓');}).catch(function(){window.prompt('このリンクをコピー:',location.href);});}
+function copyLink(){(navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){toast('Link copied ✓');}).catch(function(){window.prompt('Copy this link:',location.href);});}
 function nativeShare(){if(navigator.share){navigator.share({title:document.title,text:SHARE_TEXT,url:location.href}).catch(function(){});}else{copyLink();}}
 document.addEventListener('DOMContentLoaded',function(){
   var u=encodeURIComponent(location.href),t=encodeURIComponent(SHARE_TEXT);
