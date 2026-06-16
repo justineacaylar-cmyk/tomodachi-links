@@ -75,9 +75,11 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
 .actionbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;justify-content:center;
  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
  background:linear-gradient(180deg,transparent,rgba(8,8,12,.93) 24%)}
-.abtn{flex:1;max-width:210px;text-align:center;text-decoration:none;cursor:pointer;border:1px solid #f0e3bf;
- font-family:'DotGothic16',monospace;font-size:14px;font-weight:700;letter-spacing:1px;padding:13px 10px;
- border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+.abtn{flex:1 1 0;min-width:0;max-width:200px;box-sizing:border-box;height:48px;
+ display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;cursor:pointer;
+ border:1px solid #f0e3bf;font-family:'DotGothic16',monospace;font-size:14px;font-weight:700;letter-spacing:1px;
+ line-height:1;padding:0 12px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.5);
+ -webkit-appearance:none;appearance:none}
 .abtn.share{background:#E0142F;border-color:#E0142F;color:#fff}
 .abtn.pdf{background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208}
 .abtn:active{transform:scale(.97)}
