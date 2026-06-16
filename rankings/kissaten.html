@@ -1,6 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KISSATEN — Tomodachi TV</title>
+<meta name="description" content="Step out of the neon into the hush of Japan&#x27;s Showa-era coffee houses, where pour-over is an art.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tomodachi TV">
+<meta property="og:title" content="KISSATEN TOP 5｜Tomodachi TV 🇯🇵">
+<meta property="og:description" content="Step out of the neon into the hush of Japan&#x27;s Showa-era coffee houses, where pour-over is an art.">
+<meta property="og:image" content="https://justineacaylar-cmyk.github.io/tomodachi-links/rankings/img/kissaten-1.jpg">
+<meta property="og:url" content="https://justineacaylar-cmyk.github.io/tomodachi-links/rankings/kissaten.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KISSATEN TOP 5｜Tomodachi TV 🇯🇵">
+<meta name="twitter:description" content="Step out of the neon into the hush of Japan&#x27;s Showa-era coffee houses, where pour-over is an art.">
+<meta name="twitter:image" content="https://justineacaylar-cmyk.github.io/tomodachi-links/rankings/img/kissaten-1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
@@ -47,15 +58,37 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
  object-fit:cover;background:#16161c;box-shadow:0 5px 13px rgba(0,0,0,.5);filter:saturate(1.05) contrast(1.04)}
 .rbody{flex:1;min-width:0} .rbody .name{font-size:17px}
 .cred{font-family:'Shippori Mincho',serif;font-size:9px;color:#6b6557;font-style:italic;margin-top:16px;text-align:center}
-.pdfbtn{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:10;
- font-family:'DotGothic16',monospace;font-size:14px;letter-spacing:1px;font-weight:700;
- background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;text-decoration:none;
- padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.55);border:1px solid #f0e3bf}
-.pdfbtn:active{transform:translateX(-50%) scale(.97)}
+/* share card (explicit SNS posting) */
+.share{margin-top:22px;padding:16px 14px;border:1px solid rgba(201,174,106,.32);border-radius:14px;
+ background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));text-align:center}
+.shead{font-family:'DotGothic16',monospace;font-size:15px;color:var(--gold2);letter-spacing:1px}
+.ssub{font-size:12px;color:var(--cream);opacity:.82;margin:4px 0 12px}
+.sbtns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.sbtn{display:inline-flex;align-items:center;gap:5px;text-decoration:none;cursor:pointer;
+ font-family:inherit;font-size:13px;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,.18);
+ background:rgba(255,255,255,.08);border-radius:999px;padding:9px 15px}
+.sbtn.fb{background:#1877F2;border-color:#1877F2}
+.sbtn.line{background:#06C755;border-color:#06C755}
+.sbtn.x{background:#111;border-color:#333}
+.sbtn:active{transform:scale(.96)}
+/* sticky action bar: primary share + PDF save */
+.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;justify-content:center;
+ padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+ background:linear-gradient(180deg,transparent,rgba(8,8,12,.93) 24%)}
+.abtn{flex:1;max-width:210px;text-align:center;text-decoration:none;cursor:pointer;border:1px solid #f0e3bf;
+ font-family:'DotGothic16',monospace;font-size:14px;font-weight:700;letter-spacing:1px;padding:13px 10px;
+ border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+.abtn.share{background:#E0142F;border-color:#E0142F;color:#fff}
+.abtn.pdf{background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208}
+.abtn:active{transform:scale(.97)}
+.toast{position:fixed;left:50%;bottom:76px;transform:translateX(-50%) translateY(10px);z-index:30;
+ background:rgba(20,20,26,.96);color:#fff;font-size:13px;padding:9px 16px;border-radius:999px;
+ border:1px solid rgba(255,255,255,.16);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 </style></head><body><main class="page">
-<div class="top"><img class="logo" src="img/_logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAAA+klEQVR4nO3cwYnCUBRA0XyxoynCjR1Yh1VMHdOBG4uwpm8HZnEI0fGerSTC5QUeke9YNna73eerz8/n09jy+q0d9vzy/6CAqICogKiAqICogGh1h5pzvtzDPt0Yg/bIJhAVEBUQFRAVEBUQFRAd9Qa/l5/lnV3/HnT92h7cBKICogKiAqICogKiAu69B346fd/ZBKICogKiAqICogKiAqKv3wPHyu/CvQ/cWI8wKiAqICogKiAqIPr6PVD3xCYQFRAVEBUQFRAVEBUQdU5kdE5kVz3CqICogKiAqICogIj/c2W++Xli3fPWNIGogKiAqICogKiAqICLeQK7miOBJ2HRQgAAAABJRU5ErkJggg==" alt=""></div>
+<div class="top"><img class="logo" src="img/logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAAA+klEQVR4nO3cwYnCUBRA0XyxoynCjR1Yh1VMHdOBG4uwpm8HZnEI0fGerSTC5QUeke9YNna73eerz8/n09jy+q0d9vzy/6CAqICogKiAqICogGh1h5pzvtzDPt0Yg/bIJhAVEBUQFRAVEBUQFRAd9Qa/l5/lnV3/HnT92h7cBKICogKiAqICogKiAu69B346fd/ZBKICogKiAqICogKiAqKv3wPHyu/CvQ/cWI8wKiAqICogKiAqIPr6PVD3xCYQFRAVEBUQFRAVEBUQdU5kdE5kVz3CqICogKiAqICogIj/c2W++Xli3fPWNIGogKiAqICogKiAqICLeQK7miOBJ2HRQgAAAABJRU5ErkJggg==" alt=""></div>
 <h1>KISSATEN</h1>
 <div class="kicker">★ ＴＯＰ ５ ★</div>
 <div class="stand">Step out of the neon into the hush of Japan&#x27;s Showa-era coffee houses, where pour-over is an art.</div>
@@ -94,7 +127,33 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-
         <div class="tags">100-year-old kissaten ・ Yanaka (Nezu/Ueno Stn) ・ ¥¥ <span class="note">~100 years, landmark building</span></div>
         <div class="hist sm">A corner kissaten in old-town Yanaka in a 1916 wooden building, a coffee house since 1938; famed for its egg sandwich.</div></div>
     </div>
+<section class="share">
+  <div class="shead">友達・SNSにシェア 📣</div>
+  <div class="ssub">気に入ったら保存して、友達にも教えてあげよう</div>
+  <div class="sbtns">
+    <a id="sfb" class="sbtn fb" target="_blank" rel="noopener">Facebook</a>
+    <a id="sln" class="sbtn line" target="_blank" rel="noopener">LINE</a>
+    <a id="sx" class="sbtn x" target="_blank" rel="noopener">X</a>
+    <button class="sbtn copy" type="button" onclick="copyLink()">🔗 リンク</button>
+  </div>
+</section>
 <div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
 </main>
-<a class="pdfbtn" href="kissaten.pdf" download>PDFを保存 ⬇</a>
+<div class="actionbar">
+  <button class="abtn share" type="button" onclick="nativeShare()">📤 シェア</button>
+  <a class="abtn pdf" href="kissaten.pdf" download>⬇ PDF保存</a>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+const SHARE_TEXT="KISSATEN TOP 5｜Tomodachi TV 🇯🇵";
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');setTimeout(function(){t.classList.remove('on');},1600);}
+function copyLink(){(navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(function(){toast('リンクをコピーしました ✓');}).catch(function(){window.prompt('このリンクをコピー:',location.href);});}
+function nativeShare(){if(navigator.share){navigator.share({title:document.title,text:SHARE_TEXT,url:location.href}).catch(function(){});}else{copyLink();}}
+document.addEventListener('DOMContentLoaded',function(){
+  var u=encodeURIComponent(location.href),t=encodeURIComponent(SHARE_TEXT);
+  var fb=document.getElementById('sfb');if(fb)fb.href='https://www.facebook.com/sharer/sharer.php?u='+u;
+  var ln=document.getElementById('sln');if(ln)ln.href='https://social-plugins.line.me/lineit/share?url='+u;
+  var x=document.getElementById('sx');if(x)x.href='https://twitter.com/intent/tweet?text='+t+'&url='+u;
+});
+</script>
 </body></html>
