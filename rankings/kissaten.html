@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KISSATEN — Tomodachi TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--acc:#6E4B2A;--gold:#c9ae6a;--gold2:#e8d39a;--ink:#0c0c10;--cream:#efe9dc;--mut:#9a917f}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Shippori Mincho',serif;color:#fff;line-height:1.5;background:var(--ink);
+ background-image:radial-gradient(circle at 50% -4%,#6E4B2A55,transparent 44%),
+   radial-gradient(circle at 92% 104%,rgba(201,174,106,.12),transparent 40%),
+   radial-gradient(rgba(255,255,255,.025) 1px,transparent 1px);
+ background-size:auto,auto,7px 7px;background-attachment:fixed;padding-bottom:88px}
+.page{max-width:640px;margin:0 auto;padding:20px 16px 26px}
+.top{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:8px}
+.top .logo{width:30px;height:30px;border-radius:50%;background:#fff;padding:3px}
+.top .motif{height:26px;image-rendering:pixelated;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+.brand{font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;color:var(--gold2)}
+h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-spacing:1px;
+ text-align:center;line-height:1.5;color:#fff;text-shadow:0 0 16px #6E4B2Acc;margin-top:4px}
+.kicker{text-align:center;font-family:'DotGothic16',monospace;color:var(--gold2);font-size:12px;letter-spacing:6px;margin:10px 0 6px}
+.stand{text-align:center;color:var(--cream);font-size:13.5px;font-style:italic;margin-bottom:16px;padding:0 4px}
+.hero{position:relative;display:block;border:1.5px solid var(--gold);border-radius:10px;overflow:hidden;
+ margin-bottom:14px;box-shadow:0 10px 26px rgba(0,0,0,.55);aspect-ratio:4/3;background:#16161c}
+.himg{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.06) contrast(1.05) brightness(.97)}
+.hgrad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.96),rgba(0,0,0,.82) 38%,rgba(0,0,0,.4) 60%,transparent 78%)}
+.hbadge{position:absolute;top:10px;left:10px;display:flex;align-items:baseline;gap:3px;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;font-family:'Press Start 2P',monospace;
+ padding:7px 11px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.bno{font-size:8px;letter-spacing:1px} .bnum{font-size:19px}
+.hoverlay{position:absolute;left:0;right:0;bottom:0;padding:16px 16px 14px}
+.name{font-family:'Shippori Mincho',serif;font-weight:700;color:#fff}
+.name.big{font-size:clamp(22px,6vw,30px);text-shadow:0 2px 9px #000,0 0 2px #000}
+.jp{font-size:.55em;color:var(--gold2);font-weight:500}
+.tags{font-family:'DotGothic16',monospace;font-size:12px;color:var(--gold2);margin:5px 0;text-shadow:0 1px 2px #000}
+.mich{color:#1a1208;background:var(--gold2);padding:1px 7px;border-radius:3px;font-size:10px;margin-left:3px}
+.note{color:var(--cream);opacity:.85;margin-left:3px}
+.hist{font-size:13px;line-height:1.55;color:#f3eee3;text-shadow:0 1px 3px #000}
+.hist.sm{font-size:12.5px;line-height:1.5;color:var(--cream);text-shadow:none}
+.row{display:flex;align-items:center;gap:12px;padding:13px 2px;border-bottom:1px solid rgba(201,174,106,.2)}
+.row:last-of-type{border-bottom:none}
+.rk{font-family:'Press Start 2P',monospace;color:var(--acc);text-shadow:0 0 8px #6E4B2Aaa,0 2px 3px #000;
+ font-size:16px;min-width:30px;text-align:center;flex:none}
+.thumb{width:104px;height:78px;flex:none;border:1.5px solid var(--gold);border-radius:6px;
+ object-fit:cover;background:#16161c;box-shadow:0 5px 13px rgba(0,0,0,.5);filter:saturate(1.05) contrast(1.04)}
+.rbody{flex:1;min-width:0} .rbody .name{font-size:17px}
+.cred{font-family:'Shippori Mincho',serif;font-size:9px;color:#6b6557;font-style:italic;margin-top:16px;text-align:center}
+.pdfbtn{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:10;
+ font-family:'DotGothic16',monospace;font-size:14px;letter-spacing:1px;font-weight:700;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;text-decoration:none;
+ padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.pdfbtn:active{transform:translateX(-50%) scale(.97)}
+@media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+</style></head><body><main class="page">
+<div class="top"><img class="logo" src="img/_logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABACAYAAACNx/A2AAAA+klEQVR4nO3cwYnCUBRA0XyxoynCjR1Yh1VMHdOBG4uwpm8HZnEI0fGerSTC5QUeke9YNna73eerz8/n09jy+q0d9vzy/6CAqICogKiAqICogGh1h5pzvtzDPt0Yg/bIJhAVEBUQFRAVEBUQFRAd9Qa/l5/lnV3/HnT92h7cBKICogKiAqICogKiAu69B346fd/ZBKICogKiAqICogKiAqKv3wPHyu/CvQ/cWI8wKiAqICogKiAqIPr6PVD3xCYQFRAVEBUQFRAVEBUQdU5kdE5kVz3CqICogKiAqICogIj/c2W++Xli3fPWNIGogKiAqICogKiAqICLeQK7miOBJ2HRQgAAAABJRU5ErkJggg==" alt=""></div>
+<h1>KISSATEN</h1>
+<div class="kicker">★ ＴＯＰ ５ ★</div>
+<div class="stand">Step out of the neon into the hush of Japan&#x27;s Showa-era coffee houses, where pour-over is an art.</div>
+<section class="hero">
+      <img class="himg" src="img/kissaten-1.jpg" alt="Café de l&#x27;Ambre" loading="eager" decoding="async">
+      <div class="hgrad"></div>
+      <div class="hbadge"><span class="bno">NO.</span><span class="bnum">1</span></div>
+      <div class="hoverlay">
+        <div class="name big">Café de l&#x27;Ambre <span class="jp">カフェ・ド・ランブル</span></div>
+        <div class="tags">Aged-bean pour-over ・ Ginza (Ginza Stn) ・ ¥¥ <span class="note">Founded 1948, coffee-only</span></div>
+        <div class="hist">Opened 1948 by Ichiro Sekiguchi (who lived to 104); famous for &#x27;old coffee&#x27; from beans aged years, in vintage china.</div>
+      </div>
+    </section>
+<div class="row">
+      <span class="rk">02</span>
+      <img class="thumb" src="img/kissaten-2.jpg" alt="Chatei Hatou" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Chatei Hatou <span class="jp">茶亭 羽當</span></div>
+        <div class="tags">Hand-drip pour-over ・ Shibuya (5 min from Stn) ・ ¥¥ <span class="note">Shibuya&#x27;s most revered kissaten</span></div>
+        <div class="hist sm">A peaceful, windowless haven minutes from the Crossing, serving meticulous pour-over since 1989; sit at the counter.</div></div>
+    </div><div class="row">
+      <span class="rk">03</span>
+      <img class="thumb" src="img/kissaten-3.jpg" alt="Kissa You" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Kissa You <span class="jp">喫茶YOU</span></div>
+        <div class="tags">Showa café, famous omurice ・ Ginza (Higashi-Ginza Stn) ・ ¥¥ <span class="note">Beloved by kabuki actors</span></div>
+        <div class="hist sm">Founded 1970, beside the Kabukiza with its Showa interior intact; celebrated for an almost drinkable, ultra-soft omurice.</div></div>
+    </div><div class="row">
+      <span class="rk">04</span>
+      <img class="thumb" src="img/kissaten-4.jpg" alt="Tsubakiya" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Tsubakiya <span class="jp">椿屋珈琲</span></div>
+        <div class="tags">Taishō-style coffee house ・ Ginza (Ginza Stn) ・ ¥¥ <span class="note">Taishō-romance atmosphere</span></div>
+        <div class="hist sm">A dim, antique Ginza kissaten styled after the Taishō era (1912–26), serving siphon coffee with old-Tokyo elegance.</div></div>
+    </div><div class="row">
+      <span class="rk">05</span>
+      <img class="thumb" src="img/kissaten-5.jpg" alt="Kayaba Coffee" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Kayaba Coffee <span class="jp">カヤバ珈琲</span></div>
+        <div class="tags">100-year-old kissaten ・ Yanaka (Nezu/Ueno Stn) ・ ¥¥ <span class="note">~100 years, landmark building</span></div>
+        <div class="hist sm">A corner kissaten in old-town Yanaka in a 1916 wooden building, a coffee house since 1938; famed for its egg sandwich.</div></div>
+    </div>
+<div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
+</main>
+<a class="pdfbtn" href="kissaten.pdf" download>PDFを保存 ⬇</a>
+</body></html>

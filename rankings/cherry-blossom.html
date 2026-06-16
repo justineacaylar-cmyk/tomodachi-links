@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHERRY BLOSSOM — Tomodachi TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--acc:#E26D9B;--gold:#c9ae6a;--gold2:#e8d39a;--ink:#0c0c10;--cream:#efe9dc;--mut:#9a917f}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Shippori Mincho',serif;color:#fff;line-height:1.5;background:var(--ink);
+ background-image:radial-gradient(circle at 50% -4%,#E26D9B55,transparent 44%),
+   radial-gradient(circle at 92% 104%,rgba(201,174,106,.12),transparent 40%),
+   radial-gradient(rgba(255,255,255,.025) 1px,transparent 1px);
+ background-size:auto,auto,7px 7px;background-attachment:fixed;padding-bottom:88px}
+.page{max-width:640px;margin:0 auto;padding:20px 16px 26px}
+.top{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:8px}
+.top .logo{width:30px;height:30px;border-radius:50%;background:#fff;padding:3px}
+.top .motif{height:26px;image-rendering:pixelated;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+.brand{font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;color:var(--gold2)}
+h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-spacing:1px;
+ text-align:center;line-height:1.5;color:#fff;text-shadow:0 0 16px #E26D9Bcc;margin-top:4px}
+.kicker{text-align:center;font-family:'DotGothic16',monospace;color:var(--gold2);font-size:12px;letter-spacing:6px;margin:10px 0 6px}
+.stand{text-align:center;color:var(--cream);font-size:13.5px;font-style:italic;margin-bottom:16px;padding:0 4px}
+.hero{position:relative;display:block;border:1.5px solid var(--gold);border-radius:10px;overflow:hidden;
+ margin-bottom:14px;box-shadow:0 10px 26px rgba(0,0,0,.55);aspect-ratio:4/3;background:#16161c}
+.himg{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.06) contrast(1.05) brightness(.97)}
+.hgrad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.96),rgba(0,0,0,.82) 38%,rgba(0,0,0,.4) 60%,transparent 78%)}
+.hbadge{position:absolute;top:10px;left:10px;display:flex;align-items:baseline;gap:3px;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;font-family:'Press Start 2P',monospace;
+ padding:7px 11px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.bno{font-size:8px;letter-spacing:1px} .bnum{font-size:19px}
+.hoverlay{position:absolute;left:0;right:0;bottom:0;padding:16px 16px 14px}
+.name{font-family:'Shippori Mincho',serif;font-weight:700;color:#fff}
+.name.big{font-size:clamp(22px,6vw,30px);text-shadow:0 2px 9px #000,0 0 2px #000}
+.jp{font-size:.55em;color:var(--gold2);font-weight:500}
+.tags{font-family:'DotGothic16',monospace;font-size:12px;color:var(--gold2);margin:5px 0;text-shadow:0 1px 2px #000}
+.mich{color:#1a1208;background:var(--gold2);padding:1px 7px;border-radius:3px;font-size:10px;margin-left:3px}
+.note{color:var(--cream);opacity:.85;margin-left:3px}
+.hist{font-size:13px;line-height:1.55;color:#f3eee3;text-shadow:0 1px 3px #000}
+.hist.sm{font-size:12.5px;line-height:1.5;color:var(--cream);text-shadow:none}
+.row{display:flex;align-items:center;gap:12px;padding:13px 2px;border-bottom:1px solid rgba(201,174,106,.2)}
+.row:last-of-type{border-bottom:none}
+.rk{font-family:'Press Start 2P',monospace;color:var(--acc);text-shadow:0 0 8px #E26D9Baa,0 2px 3px #000;
+ font-size:16px;min-width:30px;text-align:center;flex:none}
+.thumb{width:104px;height:78px;flex:none;border:1.5px solid var(--gold);border-radius:6px;
+ object-fit:cover;background:#16161c;box-shadow:0 5px 13px rgba(0,0,0,.5);filter:saturate(1.05) contrast(1.04)}
+.rbody{flex:1;min-width:0} .rbody .name{font-size:17px}
+.cred{font-family:'Shippori Mincho',serif;font-size:9px;color:#6b6557;font-style:italic;margin-top:16px;text-align:center}
+.pdfbtn{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:10;
+ font-family:'DotGothic16',monospace;font-size:14px;letter-spacing:1px;font-weight:700;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;text-decoration:none;
+ padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.pdfbtn:active{transform:translateX(-50%) scale(.97)}
+@media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+</style></head><body><main class="page">
+<div class="top"><img class="logo" src="img/_logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAoCAYAAACrUDmFAAAAkklEQVR4nO3ZsQ0CMRAF0fGE1w4dUBgBhdEB7VwKHeDAOh0a3Ut311rJwZflwaLP6/35VR/32zhyfkbiJE7iJE7iJE7ixqxhllNnG5OczN+gxEmcxEmcxEncWM25fXtwpG1/Ls1LnMRJnMRJnMRJ3Jg1XO/BPydxEidxEidxEjdWD7j+B08mcRIncRIncZ69wNG+LpIe1YFRZQYAAAAASUVORK5CYII=" alt=""></div>
+<h1>CHERRY BLOSSOM</h1>
+<div class="kicker">★ ＴＯＰ ５ ★</div>
+<div class="stand">Chase the bloom from Tokyo&#x27;s lantern-lit moats up to a castle in the snowy north — five hanami crowns.</div>
+<section class="hero">
+      <img class="himg" src="img/cherry-blossom-1.jpg" alt="Chidorigafuchi" loading="eager" decoding="async">
+      <div class="hgrad"></div>
+      <div class="hbadge"><span class="bno">NO.</span><span class="bnum">1</span></div>
+      <div class="hoverlay">
+        <div class="name big">Chidorigafuchi <span class="jp">千鳥ヶ淵</span></div>
+        <div class="tags">Palace moat / boating hanami ・ Chiyoda, Tokyo (Kudanshita Stn) ・ Free <span class="note">Evening light-up</span></div>
+        <div class="hist">Cherry trees arch over the old Imperial Palace moat; rent a rowboat under the blossoms, return for the night illumination. Late Mar–early Apr.</div>
+      </div>
+    </section>
+<div class="row">
+      <span class="rk">02</span>
+      <img class="thumb" src="img/cherry-blossom-2.jpg" alt="Meguro River" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Meguro River <span class="jp">目黒川</span></div>
+        <div class="tags">Riverside night sakura ・ Nakameguro, Tokyo (Naka-meguro Stn) ・ Free <span class="note">Iconic yozakura light-up</span></div>
+        <div class="hist sm">~800 cherry trees line the canal, branches meeting over the water; lanterns light the blossoms after dark. Late Mar–early Apr.</div></div>
+    </div><div class="row">
+      <span class="rk">03</span>
+      <img class="thumb" src="img/cherry-blossom-3.jpg" alt="Maruyama Park" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Maruyama Park <span class="jp">円山公園</span></div>
+        <div class="tags">City park / weeping cherry ・ Higashiyama, Kyoto (Gion-Shijo Stn) ・ Free <span class="note">Kyoto&#x27;s most famous hanami park</span></div>
+        <div class="hist sm">Home to the ~12m Gion Shidarezakura weeping cherry, illuminated nightly, beside Yasaka Shrine. Late Mar–early Apr.</div></div>
+    </div><div class="row">
+      <span class="rk">04</span>
+      <img class="thumb" src="img/cherry-blossom-4.jpg" alt="Mount Yoshino" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Mount Yoshino <span class="jp">吉野山</span></div>
+        <div class="tags">Sacred mountainside mass bloom ・ Yoshino, Nara (Yoshino Stn + ropeway) ・ Free <span class="note">UNESCO; Japan&#x27;s top cherry mountain</span></div>
+        <div class="hist sm">~30,000 cherry trees bloom in tiers up the slopes, staggering the season into a month-long relay. Early–late Apr by elevation.</div></div>
+    </div><div class="row">
+      <span class="rk">05</span>
+      <img class="thumb" src="img/cherry-blossom-5.jpg" alt="Hirosaki Castle Park" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Hirosaki Castle Park <span class="jp">弘前城公園</span></div>
+        <div class="tags">Castle park / northern bloom ・ Hirosaki, Aomori (Chuo-Hirosaki Stn) ・ Free (festival inner zone paid) <span class="note">Top 100 cherry sites</span></div>
+        <div class="hist sm">~2,600 cherry trees frame the castle and moats, famed for floating &#x27;petal-carpet&#x27; blossoms and night light-up. Late Apr–early May.</div></div>
+    </div>
+<div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
+</main>
+<a class="pdfbtn" href="cherry-blossom.pdf" download>PDFを保存 ⬇</a>
+</body></html>

@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STRAWBERRY — Tomodachi TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--acc:#E84A5F;--gold:#c9ae6a;--gold2:#e8d39a;--ink:#0c0c10;--cream:#efe9dc;--mut:#9a917f}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Shippori Mincho',serif;color:#fff;line-height:1.5;background:var(--ink);
+ background-image:radial-gradient(circle at 50% -4%,#E84A5F55,transparent 44%),
+   radial-gradient(circle at 92% 104%,rgba(201,174,106,.12),transparent 40%),
+   radial-gradient(rgba(255,255,255,.025) 1px,transparent 1px);
+ background-size:auto,auto,7px 7px;background-attachment:fixed;padding-bottom:88px}
+.page{max-width:640px;margin:0 auto;padding:20px 16px 26px}
+.top{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:8px}
+.top .logo{width:30px;height:30px;border-radius:50%;background:#fff;padding:3px}
+.top .motif{height:26px;image-rendering:pixelated;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+.brand{font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;color:var(--gold2)}
+h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-spacing:1px;
+ text-align:center;line-height:1.5;color:#fff;text-shadow:0 0 16px #E84A5Fcc;margin-top:4px}
+.kicker{text-align:center;font-family:'DotGothic16',monospace;color:var(--gold2);font-size:12px;letter-spacing:6px;margin:10px 0 6px}
+.stand{text-align:center;color:var(--cream);font-size:13.5px;font-style:italic;margin-bottom:16px;padding:0 4px}
+.hero{position:relative;display:block;border:1.5px solid var(--gold);border-radius:10px;overflow:hidden;
+ margin-bottom:14px;box-shadow:0 10px 26px rgba(0,0,0,.55);aspect-ratio:4/3;background:#16161c}
+.himg{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.06) contrast(1.05) brightness(.97)}
+.hgrad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.96),rgba(0,0,0,.82) 38%,rgba(0,0,0,.4) 60%,transparent 78%)}
+.hbadge{position:absolute;top:10px;left:10px;display:flex;align-items:baseline;gap:3px;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;font-family:'Press Start 2P',monospace;
+ padding:7px 11px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.bno{font-size:8px;letter-spacing:1px} .bnum{font-size:19px}
+.hoverlay{position:absolute;left:0;right:0;bottom:0;padding:16px 16px 14px}
+.name{font-family:'Shippori Mincho',serif;font-weight:700;color:#fff}
+.name.big{font-size:clamp(22px,6vw,30px);text-shadow:0 2px 9px #000,0 0 2px #000}
+.jp{font-size:.55em;color:var(--gold2);font-weight:500}
+.tags{font-family:'DotGothic16',monospace;font-size:12px;color:var(--gold2);margin:5px 0;text-shadow:0 1px 2px #000}
+.mich{color:#1a1208;background:var(--gold2);padding:1px 7px;border-radius:3px;font-size:10px;margin-left:3px}
+.note{color:var(--cream);opacity:.85;margin-left:3px}
+.hist{font-size:13px;line-height:1.55;color:#f3eee3;text-shadow:0 1px 3px #000}
+.hist.sm{font-size:12.5px;line-height:1.5;color:var(--cream);text-shadow:none}
+.row{display:flex;align-items:center;gap:12px;padding:13px 2px;border-bottom:1px solid rgba(201,174,106,.2)}
+.row:last-of-type{border-bottom:none}
+.rk{font-family:'Press Start 2P',monospace;color:var(--acc);text-shadow:0 0 8px #E84A5Faa,0 2px 3px #000;
+ font-size:16px;min-width:30px;text-align:center;flex:none}
+.thumb{width:104px;height:78px;flex:none;border:1.5px solid var(--gold);border-radius:6px;
+ object-fit:cover;background:#16161c;box-shadow:0 5px 13px rgba(0,0,0,.5);filter:saturate(1.05) contrast(1.04)}
+.rbody{flex:1;min-width:0} .rbody .name{font-size:17px}
+.cred{font-family:'Shippori Mincho',serif;font-size:9px;color:#6b6557;font-style:italic;margin-top:16px;text-align:center}
+.pdfbtn{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:10;
+ font-family:'DotGothic16',monospace;font-size:14px;letter-spacing:1px;font-weight:700;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;text-decoration:none;
+ padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.pdfbtn:active{transform:translateX(-50%) scale(.97)}
+@media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+</style></head><body><main class="page">
+<div class="top"><img class="logo" src="img/_logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABQCAYAAAC6aDOxAAABLklEQVR4nO3bwUkDURRA0YxYgPYhutRSJBW4spisrCBYSlwq9mE60A7mCp9hojlnO0xCLm/gkeRPm0Hb1+333PX943465fvLxcjN50CgIFAQKAgUBAoChaEd4TcOV7eze8ru5Wb2/uenz9nrD8ePRT+DCQoCBYGCQEGgIFAQKEyje8xfV3uUCQoCBYGCQEGgIFAQKEyje8791/vs9bfru5GXX/39TVAQKAgUBAoCBYGCQEvvQf+dCQoCBYGCQEGgIFAQKFye+/c9xQQFgYJAQaAgUBAoCBT8P+jo/0FDPGJBoCBQECgIFAQKw2etDif+u9roeTITFAQKAgWBgkBBoCDQqZ+bH+Xc/Mo8YkGgIFAQKAgUBFp7Dxrdk5bec4oJCgIFgYJAQaAgUBBoM+8HiBY3pGtxUNgAAAAASUVORK5CYII=" alt=""></div>
+<h1>STRAWBERRY</h1>
+<div class="kicker">★ ＴＯＰ ５ ★</div>
+<div class="stand">From late December to May, greenhouse farms near Tokyo throw open the doors for all-you-can-eat ichigo-gari.</div>
+<section class="hero">
+      <img class="himg" src="img/strawberry-picking-1.jpg" alt="Tanakaen" loading="eager" decoding="async">
+      <div class="hgrad"></div>
+      <div class="hbadge"><span class="bno">NO.</span><span class="bnum">1</span></div>
+      <div class="hoverlay">
+        <div class="name big">Tanakaen <span class="jp">田中園</span></div>
+        <div class="tags">40-min all-you-can-eat, 10+ kinds ・ Funabashi, Chiba (Misaki Stn) ・ ¥¥ <span class="note">Easy Tokyo day-trip</span></div>
+        <div class="hist">A Chiba greenhouse with 40-min all-you-can-eat across 10+ premium varieties; an easy winter day-trip near Misaki Station. Jan–May.</div>
+      </div>
+    </section>
+<div class="row">
+      <span class="rk">02</span>
+      <img class="thumb" src="img/strawberry-picking-2.jpg" alt="Yoshimura Strawberry Park" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Yoshimura Strawberry Park <span class="jp">吉村いちご園</span></div>
+        <div class="tags">No-time-limit all-you-can-eat ・ Mashiko, Tochigi (Kitayama Stn) ・ ¥¥ <span class="note">Rare unlimited-time picking</span></div>
+        <div class="hist sm">Huge range (Tochiotome, Skyberry, Milkyberry…) and no time cap on picking. Mid-Dec to mid-May.</div></div>
+    </div><div class="row">
+      <span class="rk">03</span>
+      <img class="thumb" src="img/strawberry-picking-3.jpg" alt="Sayama Berryland" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Sayama Berryland <span class="jp">サヤマベリーランド</span></div>
+        <div class="tags">Pick-your-own greenhouse ・ Sayama/Kawagoe, Saitama (Shin-Sayama Stn) ・ ¥¥ <span class="note">Closest big farm north of Tokyo</span></div>
+        <div class="hist sm">Saitama favorite open mid-Dec to late May, finishing with house-made strawberry juice and ichigo kakigori.</div></div>
+    </div><div class="row">
+      <span class="rk">04</span>
+      <img class="thumb" src="img/strawberry-picking-4.jpg" alt="Ichigo-no-Sato" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Ichigo-no-Sato <span class="jp">いちごの里</span></div>
+        <div class="tags">All-you-can-eat Tochiotome ・ Oyama, Tochigi (Oyama Stn) ・ ¥¥ <span class="note">Heart of the &#x27;Strawberry Kingdom&#x27;</span></div>
+        <div class="hist sm">In Japan&#x27;s top strawberry prefecture; offers several cultivars including prized Tochiotome, with a farm shop and café. ~Dec–May.</div></div>
+    </div><div class="row">
+      <span class="rk">05</span>
+      <img class="thumb" src="img/strawberry-picking-5.jpg" alt="Tokue Strawberry Farm" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Tokue Strawberry Farm <span class="jp">とくえ農園</span></div>
+        <div class="tags">Greenhouse all-you-can-eat ・ Aoba-ku, Yokohama (Ichigao Stn) ・ ¥¥ <span class="note">~1 hour from Shibuya</span></div>
+        <div class="hist sm">One of the closest ichigo-gari to central Tokyo — about an hour from Shibuya on the Den-en-toshi Line. Jan–May.</div></div>
+    </div>
+<div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
+</main>
+<a class="pdfbtn" href="strawberry-picking.pdf" download>PDFを保存 ⬇</a>
+</body></html>

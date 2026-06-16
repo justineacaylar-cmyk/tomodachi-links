@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BEST VIEWS — Tomodachi TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--acc:#1E8E7E;--gold:#c9ae6a;--gold2:#e8d39a;--ink:#0c0c10;--cream:#efe9dc;--mut:#9a917f}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Shippori Mincho',serif;color:#fff;line-height:1.5;background:var(--ink);
+ background-image:radial-gradient(circle at 50% -4%,#1E8E7E55,transparent 44%),
+   radial-gradient(circle at 92% 104%,rgba(201,174,106,.12),transparent 40%),
+   radial-gradient(rgba(255,255,255,.025) 1px,transparent 1px);
+ background-size:auto,auto,7px 7px;background-attachment:fixed;padding-bottom:88px}
+.page{max-width:640px;margin:0 auto;padding:20px 16px 26px}
+.top{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:8px}
+.top .logo{width:30px;height:30px;border-radius:50%;background:#fff;padding:3px}
+.top .motif{height:26px;image-rendering:pixelated;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+.brand{font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;color:var(--gold2)}
+h1{font-family:'Press Start 2P',monospace;font-size:clamp(20px,7vw,30px);letter-spacing:1px;
+ text-align:center;line-height:1.5;color:#fff;text-shadow:0 0 16px #1E8E7Ecc;margin-top:4px}
+.kicker{text-align:center;font-family:'DotGothic16',monospace;color:var(--gold2);font-size:12px;letter-spacing:6px;margin:10px 0 6px}
+.stand{text-align:center;color:var(--cream);font-size:13.5px;font-style:italic;margin-bottom:16px;padding:0 4px}
+.hero{position:relative;display:block;border:1.5px solid var(--gold);border-radius:10px;overflow:hidden;
+ margin-bottom:14px;box-shadow:0 10px 26px rgba(0,0,0,.55);aspect-ratio:4/3;background:#16161c}
+.himg{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.06) contrast(1.05) brightness(.97)}
+.hgrad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.96),rgba(0,0,0,.82) 38%,rgba(0,0,0,.4) 60%,transparent 78%)}
+.hbadge{position:absolute;top:10px;left:10px;display:flex;align-items:baseline;gap:3px;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;font-family:'Press Start 2P',monospace;
+ padding:7px 11px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.bno{font-size:8px;letter-spacing:1px} .bnum{font-size:19px}
+.hoverlay{position:absolute;left:0;right:0;bottom:0;padding:16px 16px 14px}
+.name{font-family:'Shippori Mincho',serif;font-weight:700;color:#fff}
+.name.big{font-size:clamp(22px,6vw,30px);text-shadow:0 2px 9px #000,0 0 2px #000}
+.jp{font-size:.55em;color:var(--gold2);font-weight:500}
+.tags{font-family:'DotGothic16',monospace;font-size:12px;color:var(--gold2);margin:5px 0;text-shadow:0 1px 2px #000}
+.mich{color:#1a1208;background:var(--gold2);padding:1px 7px;border-radius:3px;font-size:10px;margin-left:3px}
+.note{color:var(--cream);opacity:.85;margin-left:3px}
+.hist{font-size:13px;line-height:1.55;color:#f3eee3;text-shadow:0 1px 3px #000}
+.hist.sm{font-size:12.5px;line-height:1.5;color:var(--cream);text-shadow:none}
+.row{display:flex;align-items:center;gap:12px;padding:13px 2px;border-bottom:1px solid rgba(201,174,106,.2)}
+.row:last-of-type{border-bottom:none}
+.rk{font-family:'Press Start 2P',monospace;color:var(--acc);text-shadow:0 0 8px #1E8E7Eaa,0 2px 3px #000;
+ font-size:16px;min-width:30px;text-align:center;flex:none}
+.thumb{width:104px;height:78px;flex:none;border:1.5px solid var(--gold);border-radius:6px;
+ object-fit:cover;background:#16161c;box-shadow:0 5px 13px rgba(0,0,0,.5);filter:saturate(1.05) contrast(1.04)}
+.rbody{flex:1;min-width:0} .rbody .name{font-size:17px}
+.cred{font-family:'Shippori Mincho',serif;font-size:9px;color:#6b6557;font-style:italic;margin-top:16px;text-align:center}
+.pdfbtn{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:10;
+ font-family:'DotGothic16',monospace;font-size:14px;letter-spacing:1px;font-weight:700;
+ background:linear-gradient(135deg,#e8d39a,#c9ae6a);color:#1a1208;text-decoration:none;
+ padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.55);border:1px solid #f0e3bf}
+.pdfbtn:active{transform:translateX(-50%) scale(.97)}
+@media (prefers-reduced-motion:no-preference){.hero,.row{animation:rise .5s ease both}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+</style></head><body><main class="page">
+<div class="top"><img class="logo" src="img/_logo.png" alt="Tomodachi TV" width="30" height="30"><span class="brand">TOMODACHI TV</span><img class="motif" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAYCAYAAAAyC/XlAAAAi0lEQVR4nO3XPQ2AMBQA4ZbgBDlYwAAbDggO2DCABeRUS3FAhxeG5u5b+5c0lybNqWF/Sk0BxzzlyHrPL7/e/xDZXP0zADgDgDMAOAOAMwA4A4DL0X+2+uYLAGcAcAYAZwBwBgBnAHAGADe2JpzX/Tm+rYvrO74/XwA4A4AzADgDgDMAOAOAM4DE9gL2yyoMrqOXKQAAAABJRU5ErkJggg==" alt=""></div>
+<h1>BEST VIEWS</h1>
+<div class="kicker">★ ＴＯＰ ５ ★</div>
+<div class="stand">The jaw-dropping vistas — from Mt Fuji framed by a pagoda to a glowing blue carpet of a million flowers.</div>
+<section class="hero">
+      <img class="himg" src="img/best-views-1.jpg" alt="Chureito Pagoda &amp; Mt Fuji" loading="eager" decoding="async">
+      <div class="hgrad"></div>
+      <div class="hbadge"><span class="bno">NO.</span><span class="bnum">1</span></div>
+      <div class="hoverlay">
+        <div class="name big">Chureito Pagoda &amp; Mt Fuji <span class="jp">忠霊塔・富士山</span></div>
+        <div class="tags">Pagoda view of Mt Fuji ・ Yamanashi (Shimo-Yoshida Stn) ・ Free <span class="note">Japan&#x27;s most iconic Fuji view</span></div>
+        <div class="hist">A five-story pagoda at Arakura Sengen Shrine framing Mt Fuji with cherry blossoms — arguably Japan&#x27;s most photographed view.</div>
+      </div>
+    </section>
+<div class="row">
+      <span class="rk">02</span>
+      <img class="thumb" src="img/best-views-2.jpg" alt="Shibuya Sky" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Shibuya Sky <span class="jp">渋谷スカイ</span></div>
+        <div class="tags">Open-air rooftop deck ・ Tokyo (Shibuya Stn) ・ ¥3,000+ <span class="note">Tokyo&#x27;s premier 360° view</span></div>
+        <div class="hist sm">A 230m open-air rooftop above the world&#x27;s busiest crossing — sweeping sunset panoramas, Mt Fuji on clear days.</div></div>
+    </div><div class="row">
+      <span class="rk">03</span>
+      <img class="thumb" src="img/best-views-3.jpg" alt="Arashiyama Bamboo Grove" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Arashiyama Bamboo Grove <span class="jp">嵐山竹林</span></div>
+        <div class="tags">Towering bamboo path ・ Kyoto (Saga-Arashiyama Stn) ・ Free <span class="note">Kyoto&#x27;s signature landmark</span></div>
+        <div class="hist sm">A serene path through soaring bamboo on Kyoto&#x27;s west edge, filtered green light and rustling leaves overhead.</div></div>
+    </div><div class="row">
+      <span class="rk">04</span>
+      <img class="thumb" src="img/best-views-4.jpg" alt="Hitachi Seaside Park" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Hitachi Seaside Park <span class="jp">国営ひたち海浜公園</span></div>
+        <div class="tags">Vast seaside flower park ・ Ibaraki (Katsuta Stn + bus) ・ ¥450+ <span class="note">World-famous nemophila &amp; kochia</span></div>
+        <div class="hist sm">Late spring: a sea of 5M+ sky-blue nemophila on Miharashi Hill; autumn: the same hills blaze crimson with kochia.</div></div>
+    </div><div class="row">
+      <span class="rk">05</span>
+      <img class="thumb" src="img/best-views-5.jpg" alt="Takachiho Gorge" loading="lazy" decoding="async">
+      <div class="rbody"><div class="name">Takachiho Gorge <span class="jp">高千穂峡</span></div>
+        <div class="tags">Volcanic river gorge ・ Miyazaki, Kyushu (bus to Takachiho) ・ Free (boat ~¥5,000) <span class="note">National Place of Scenic Beauty</span></div>
+        <div class="hist sm">Sheer basalt columns where Manai Falls plunges into emerald water — best seen by rowboat beneath the cliffs.</div></div>
+    </div>
+<div class="cred">Photos: free-license / CC (Wikimedia · Unsplash · Pexels) — placeholder stock; final = shop-supplied.</div>
+</main>
+<a class="pdfbtn" href="best-views.pdf" download>PDFを保存 ⬇</a>
+</body></html>
