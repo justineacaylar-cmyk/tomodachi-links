@@ -1,11 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tomodachi TV — The curated media of authentic Japan</title>
-<meta name="description" content="The curated media of authentic Japan. Films and field guides from the places that never advertise.">
+<meta name="description" content="The curated media of authentic Japan. A film journal of the places that never advertise — and how venues &amp; brands get featured.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tomodachi TV">
 <meta property="og:title" content="Tomodachi TV">
-<meta property="og:description" content="The curated media of authentic Japan.">
+<meta property="og:description" content="The curated media of authentic Japan. Films from the places that never advertise.">
 <meta property="og:image" content="https://tomodachitv.com/rankings/img/logo.png">
 <meta property="og:url" content="https://tomodachitv.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@ nav a{color:var(--gold)} nav a:hover{color:var(--cream)}
 .sect{margin:0 0 54px}
 .shead{margin-bottom:20px}
 .hero{display:block;position:relative;border:1px solid rgba(227,185,106,.32);padding:64px 34px;
- margin-bottom:54px;transition:border-color .25s;overflow:hidden}
+ margin-bottom:40px;transition:border-color .25s;overflow:hidden}
 .hero:hover{border-color:var(--gold)}
 .hero.photo{background-size:cover;background-position:center;min-height:420px;display:flex;align-items:flex-end;padding:0}
 .hgrad{position:absolute;inset:0;background:linear-gradient(to top,rgba(19,16,12,.95),rgba(19,16,12,.55) 45%,rgba(19,16,12,.12))}
@@ -45,6 +45,19 @@ nav a{color:var(--gold)} nav a:hover{color:var(--cream)}
 .htitle{font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-weight:500;font-size:clamp(44px,8.5vw,76px);line-height:1.05;color:var(--cream)}
 .hdek{font-style:italic;font-size:17px;color:var(--camel)}
 .hread{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11.5px;letter-spacing:.2em;color:var(--gold);margin-top:8px}
+/* FOR VENUES & BRANDS band — the ask, high up, badge-framed (not reach-selling) */
+.band{text-align:center;border:1px solid rgba(227,185,106,.34);padding:52px 30px;max-width:720px;margin:0 auto 54px}
+.bandhead{font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-weight:500;font-size:clamp(30px,6vw,46px);
+ line-height:1.1;color:var(--cream);margin:14px 0 16px}
+.bandline{font-size:15px;color:var(--camel);max-width:34em;margin:0 auto 28px;line-height:1.9}
+.banddoors{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.door{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;padding:13px 26px;
+ border-radius:2px;transition:transform .15s,background .2s,color .2s}
+.door.jp{background:var(--gold);color:var(--ink)}
+.door.jp:hover{transform:translateY(-1px)}
+.door.en{border:1px solid rgba(227,185,106,.5);color:var(--gold)}
+.door.en:hover{border-color:var(--gold);color:var(--cream)}
+.bandstats{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:.16em;color:rgba(203,187,157,.58)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:26px}
 .card{display:flex;flex-direction:column;gap:9px;border:1px solid rgba(227,185,106,.22);padding:0 0 16px;
  transition:border-color .25s}
@@ -57,21 +70,16 @@ nav a{color:var(--gold)} nav a:hover{color:var(--cream)}
 .ctitle{font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-size:26px;line-height:1.15;padding:0 16px}
 .card .prchip{margin:2px 16px 0;align-self:flex-start}
 .about{max-width:620px;margin:0 auto;text-align:center}
-.about p{font-size:15.5px;margin:16px 0 18px}
-.statline{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11.5px;letter-spacing:.14em;color:var(--camel)}
+.about p{font-size:15.5px;margin:16px 0 0}
 .gsub{font-style:italic;font-size:13.5px;color:var(--camel);margin:-12px 0 20px}
 .glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:2px 34px;max-width:640px}
-.gitem{font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-size:19px;color:var(--cream);padding:7px 0;
- border-bottom:1px solid rgba(227,185,106,.16)}
+.gitem{font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-size:18px;color:var(--camel);padding:7px 0;
+ border-bottom:1px solid rgba(227,185,106,.14)}
 .gitem:hover{color:var(--gold)}
-.brands{border:1px solid rgba(227,185,106,.3);padding:34px;max-width:640px}
-.brands p{font-size:14.5px;margin:14px 0 20px;color:var(--cream)}
-.blinks{display:flex;gap:28px;flex-wrap:wrap;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:13px;letter-spacing:.04em}
-.blinks a{color:var(--gold)}
 .followrow{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin:0 0 8px;
  font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:.1em}
 .followrow a{color:var(--camel)} .followrow a:hover{color:var(--cream)}
-@media (max-width:520px){.hero{padding:44px 22px} .hero.photo{min-height:460px}}
+@media (max-width:520px){.hero{padding:44px 22px} .hero.photo{min-height:460px} .band{padding:40px 22px}}
 </style></head><body>
 <main class="page">
 <header class="mast">
@@ -79,30 +87,29 @@ nav a{color:var(--gold)} nav a:hover{color:var(--cream)}
  <div class="tagline">The curated media of authentic Japan.</div>
 </header>
 <nav>
- <a href="#stories">STORIES</a><a href="#guides">GUIDES</a><a href="#about">ABOUT</a>
- <a href="/partner/">掲載について</a><a href="/links/">LINKS</a>
+ <a href="#featured">FEATURED</a><a href="#about">ABOUT</a>
+ <a href="/partner/">掲載について</a><a href="#guides">GUIDES</a><a href="/links/">LINKS</a>
 </nav>
 <a class="hero" href="story/sankoin.html"><span class="hbody"><span class="kicker">KOGANEI, TOKYO · OVER 660 YEARS</span><span class="prchip">PR · GIFTED VISIT</span><span class="htitle">Princess cuisine.</span><span class="hdek">The princesses never cooked it.</span><span class="hread">Read the story&nbsp;&nbsp;›</span></span></a>
-<section id="stories" class="sect"><div class="shead kicker">FEATURED STORIES</div><div class="grid"><a class="card" href="story/tachigui-hiroya.html"><span class="cimg blank"></span><span class="ckick">DAIMON, TOKYO · A TOP-100 CHEF</span><span class="ctitle">The counter.</span><span class="prchip">PR · GIFTED VISIT</span></a></div></section>
+<section id="brands" class="sect band">
+ <div class="kicker">FOR VENUES &amp; BRANDS</div>
+ <h2 class="bandhead">Featured, not advertised.</h2>
+ <p class="bandline">We film a small number of places each season — the ones worth remembering. Every feature is real, and disclosed as PR.</p>
+ <div class="banddoors">
+  <a class="door jp" href="/partner/">掲載をご検討の方へ&nbsp;&nbsp;›</a>
+  <a class="door en" href="mailto:partnerships@tomodachitv.com?subject=Featuring%20inquiry%20%E2%80%94%20Tomodachi%20TV">For brands&nbsp;&nbsp;›</a>
+ </div>
+ <div class="bandstats">18M+ views · ~140K readers · seen worldwide</div>
+</section>
+<section id="featured" class="sect"><div class="shead kicker">RECENTLY FEATURED</div><div class="grid"><a class="card" href="story/tachigui-hiroya.html"><span class="cimg blank"></span><span class="ckick">DAIMON, TOKYO · A TOP-100 CHEF</span><span class="ctitle">The counter.</span><span class="prchip">PR · GIFTED VISIT</span></a></div></section>
 <section id="about" class="sect about">
  <div class="kicker">ABOUT</div>
  <p>Tomodachi TV is a small, independent film journal made in Tokyo. We film the places that never advertise — eight-seat counters, temple kitchens, third-generation workshops — and tell one true story at a time. Every frame is real: real visits, real photographs, no AI.</p>
- <div class="statline">18M+ views · ~140K readers · July 2026</div>
 </section>
 <section id="guides" class="sect">
  <div class="shead kicker">GUIDES</div>
- <p class="gsub">Fourteen short field guides. Start anywhere.</p>
+ <p class="gsub">Fourteen short field guides for travelers. Start anywhere.</p>
  <div class="glist"><a class="gitem" href="/rankings/shrines.html">Shrines</a><a class="gitem" href="/rankings/symbols-of-japan.html">Symbols of Japan</a><a class="gitem" href="/rankings/cherry-blossom.html">Cherry Blossom</a><a class="gitem" href="/rankings/ramen.html">Ramen</a><a class="gitem" href="/rankings/sushi.html">Sushi</a><a class="gitem" href="/rankings/matcha.html">Matcha</a><a class="gitem" href="/rankings/castles.html">Castles</a><a class="gitem" href="/rankings/animal-spots.html">Animal Spots</a><a class="gitem" href="/rankings/best-views.html">Best Views</a><a class="gitem" href="/rankings/osaka-eats.html">Osaka Eats</a><a class="gitem" href="/rankings/wagashi.html">Wagashi</a><a class="gitem" href="/rankings/konbini-eats.html">Konbini Eats</a><a class="gitem" href="/rankings/strawberry-picking.html">Strawberry Picking</a><a class="gitem" href="/rankings/kissaten.html">Kissaten</a></div>
-</section>
-<section id="brands" class="sect">
- <div class="shead kicker">FOR VENUES &amp; BRANDS</div>
- <div class="brands">
-  <p>We feature a small number of places each season. Every feature is disclosed — PR.</p>
-  <div class="blinks">
-   <a href="/partner/">掲載をご検討の方へ&nbsp;&nbsp;›</a>
-   <a href="mailto:partnerships@tomodachitv.com?subject=Partnership%20inquiry">partnerships@tomodachitv.com</a>
-  </div>
- </div>
 </section>
 <div class="followrow">
  <a href="https://www.instagram.com/tomodachitv_" target="_blank" rel="noopener">Instagram</a>
