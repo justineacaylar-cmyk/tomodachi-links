@@ -1,0 +1,49 @@
+# tomodachitv.com — robots.txt
+# We WANT to be readable by answer engines: being quoted in an AI answer is the point.
+# Everything is public editorial; there is nothing here to hide from a crawler.
+
+User-agent: *
+Allow: /
+
+# --- Answer engines / AI assistants: explicitly welcome ---
+# OpenAI — ChatGPT browsing & answers
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — ChatGPT search index
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — user-initiated fetches
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity — user-initiated fetches
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic — user-initiated fetches
+User-agent: Claude-User
+Allow: /
+
+# Google — Gemini grounding opt-in (not a crawler)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft — Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Apple — Apple Intelligence opt-in
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://tomodachitv.com/sitemap.xml
