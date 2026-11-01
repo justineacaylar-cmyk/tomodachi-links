@@ -64,8 +64,6 @@ ul.pol li::before{content:"—";position:absolute;left:0;color:var(--gold)}
   align-items:center;gap:10px;font-size:14.5px;text-align:left}
 .links a b{font-weight:400;min-width:0;overflow-wrap:anywhere}
 .links a span{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:10.5px;letter-spacing:.16em;color:var(--camel);flex:none}
-.add{display:block;text-align:center;margin-top:12px;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:12.5px;letter-spacing:.12em;
-  background:var(--gold);color:var(--ink);padding:12px 16px;font-weight:600}
 .corp{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11.5px;color:rgba(203,187,157,.6);margin-top:14px}
 .more{display:inline-block;margin-top:16px;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11.5px;letter-spacing:.14em;
   color:var(--gold);border-bottom:1px solid rgba(227,185,106,.5);padding-bottom:3px}
@@ -74,6 +72,32 @@ ul.pol li::before{content:"—";position:absolute;left:0;color:var(--gold)}
   border-bottom:1px solid rgba(203,187,157,.4);padding:0 2px}
 [data-lang=en] .ja,[data-lang=ja] .en{display:none}
 @media(max-width:420px){.wk b{font-size:12.5px}.wk .rg{font-size:9.5px}.wk .act{font-size:10.5px}}
+.cta{display:block;text-align:center;margin-top:16px;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:13px;letter-spacing:.12em;
+  background:var(--gold);color:var(--ink);padding:14px 16px;font-weight:700}
+.add{display:block;text-align:center;margin-top:10px;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:.12em;
+  border:1px solid rgba(203,187,157,.45);color:var(--camel);padding:11px 16px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(203,187,157,.18);
+  border:1px solid rgba(203,187,157,.18)}
+.st{background:var(--ink);padding:14px 12px}
+.st b{display:block;font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-size:22px;font-weight:500;color:var(--cream);line-height:1.2}
+.st span{display:block;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11px;color:var(--camel);margin-top:5px;line-height:1.5}
+.asof{font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:10.5px;color:rgba(203,187,157,.6);margin-top:8px}
+.offer{display:grid;grid-template-columns:1fr;gap:12px}
+.of{border-left:2px solid var(--gold);padding:2px 0 2px 14px}
+.of b{display:block;font-size:15px;font-weight:600;margin-bottom:4px}
+.of p{font-size:13.5px;line-height:1.85;color:var(--camel)}
+.of a{display:inline-block;margin-top:6px;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11.5px;color:var(--gold);
+  border-bottom:1px solid rgba(227,185,106,.45)}
+ol.flow{list-style:none;counter-reset:f}
+ol.flow li{counter-increment:f;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(203,187,157,.16)}
+ol.flow li:first-child{border-top:none}
+ol.flow li::before{content:counter(f);position:absolute;left:0;top:10px;width:26px;height:26px;border:1px solid var(--gold);
+  border-radius:50%;text-align:center;line-height:24px;font-family:'Playfair Display',Didot,'Bodoni 72',Georgia,serif;font-size:13px;color:var(--gold)}
+ol.flow b{display:block;font-size:14.5px;font-weight:600}
+ol.flow span{display:block;font-size:13px;line-height:1.75;color:var(--camel)}
+blockquote{font-size:16px;line-height:1.9;border-left:2px solid var(--gold);padding:4px 0 4px 16px}
+blockquote cite{display:block;font-style:normal;font-family:-apple-system,'Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:11px;color:var(--camel);margin-top:8px}
+@media(min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}.offer{grid-template-columns:repeat(3,1fr);gap:22px}}
 /* PC: 左＝本人（写真・名前・連絡先を固定）／右＝作品と取り組み */
 @media(min-width:900px){
   .card{padding:48px 40px 56px}
@@ -103,11 +127,16 @@ ul.pol li::before{content:"—";position:absolute;left:0;color:var(--gold)}
         <a href="https://www.instagram.com/tomodachitv_"><b>Instagram @tomodachitv_</b><span>IG</span></a>
         <a href="/"><b>tomodachitv.com</b><span>WEB</span></a>
       </nav>
+      <a class="cta" href="mailto:partnerships@tomodachitv.com?subject=%E3%81%94%E7%9B%B8%E8%AB%87%EF%BC%88%E5%90%8D%E5%88%BA%E3%81%8B%E3%82%89%EF%BC%89&amp;body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E3%81%94%E6%89%80%E5%B1%9E%EF%BC%9A%0A%E3%81%94%E7%9B%B8%E8%AB%87%E3%81%AE%E5%86%85%E5%AE%B9%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%99%82%E6%9C%9F%EF%BC%9A%0A">メールで相談する</a>
       <a class="add" href="acaylar-justine.vcf">連絡先に保存</a><p class="corp">運営: ＴＯＭＯＤＡＣＨＩ株式会社</p></section>
   </aside>
   <div class="body">
   <section><div class="k">撮ってきたもの</div><div class="works"><div class="wk"><a href="/story/negura.html"><img src="/story/img/negura-1.jpg" alt="Kissa Negura" loading="lazy"></a><b>Kissa Negura</b><span class="rg">Shimokitazawa, Tokyo</span><span class="act"><a href="https://www.instagram.com/reel/DaSgQxiIAAK">▶ 動画</a><a href="/story/negura.html">英語の記事</a></span></div><div class="wk"><img src="/story/img/sankoin-1.jpg" alt="Sankoin" loading="lazy"><b>Sankoin</b><span class="rg">Koganei, Tokyo</span><span class="act"><a href="https://www.instagram.com/reel/DaXehZHITkO">▶ 動画</a></span></div><div class="wk"><a href="/story/tachigui-hiroya.html"><img src="/story/img/tachigui-hiroya-1.jpg" alt="Tachigui Sushi Hiroya" loading="lazy"></a><b>Tachigui Sushi Hiroya</b><span class="rg">Daimon, Tokyo</span><span class="act"><a href="https://www.instagram.com/reel/DaCZX9GI2Ox">▶ 動画</a><a href="/story/tachigui-hiroya.html">英語の記事</a></span></div></div></section>
-  <section><div class="k">これまでの取り組み</div><ul class="tr"><li>取材した店と工房 20件以上</li><li>英語で公開した記事 6本</li></ul></section>
+  <section><div class="k">数字（実測）</div><div class="stats"><div class="st"><b>約13.5万</b><span>海外向けアカウントの読者</span></div><div class="st"><b>1,800万+</b><span>これまでの累計再生数</span></div><div class="st"><b>20件以上</b><span>取材した店と工房</span></div><div class="st"><b>6本</b><span>英語で公開した記事</span></div></div><p class="asof">読者数は2026年9月21日時点。切り上げていません。</p></section>
+  <section><div class="k">ご一緒できること</div><div class="offer"><div class="of"><b>記録して、海外へ届ける</b><p>東京を中心に、飲食店・工房・体験の現場を取材し、映像と英語の記事にして公開しています。</p></div><div class="of"><b>お店・工房の撮影</b><p>完成した映像は、お店のアカウントで共同投稿・再投稿していただけます。公開から21日後に、実際の数字をまとめてお渡しします。</p><a href="/partner/">掲載のご案内 ›</a></div><div class="of"><b>地域の行事の記録</b><p>祭礼や地域の行事を、ご了解のもとで記録し、自治体や観光協会のアカウントと共同で発信します。記録は地域へ無償・期限なしでお渡しします。</p></div></div></section>
+  <section><div class="k">ご依頼の流れ</div><ol class="flow"><li><b>ご連絡</b><span>メールでご相談ください。内容と時期をうかがいます。</span></li><li><b>お話をうかがう</b><span>撮りたいもの・撮ってほしくないもの・映りたくない方を、撮影の前に決めます。</span></li><li><b>撮影</b><span>小さな機材と少ない人数で、営業のご迷惑にならないように撮ります。</span></li><li><b>公開前にご確認</b><span>お名前・お写真・文章は、公開の前に必ずご確認いただきます。</span></li><li><b>公開と、21日後のご報告</b><span>公開から21日後に、再生数などを実数のままお渡しします。</span></li></ol></section>
+  <section><div class="k">いただいた声</div><blockquote>「営業のご案内はすべてお断りしてきたのに、お会いしたくなった」<cite>— 複数の事業者から（2026年9月）</cite></blockquote></section>
+  
   <section><div class="k">編集方針</div>
     <ul class="pol"><li>主役は、場所とそこにいる人たち</li><li>年号や由来は、一次資料で確かめてから書く</li><li>数字は実測だけをお出しする</li><li>撮って終わりにしない</li><li>映りたくない方は撮らない。公開前に必ずご確認いただく</li></ul>
     <a class="more" href="/profile/">詳しいご紹介 ・ これまでの取り組み ›</a></section>
